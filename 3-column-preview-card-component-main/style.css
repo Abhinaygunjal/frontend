@@ -1,0 +1,120 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 800px;
+    font-family: "Lexend Deca",sans-serif;
+}
+
+
+.preview{
+    margin: 5rem 1.6rem;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+img{
+margin-top:22px;
+margin-left: 22px;
+
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+}
+
+h1{
+    color:hsl(0, 0%, 95%);
+    font-size: 3.2rem;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin: 1.5rem;
+}
+
+p{
+color:hsla(0, 0%, 100%, 0.75);
+display: block;
+margin-bottom: 5rem;
+margin-left: 9%;
+margin-right: 9%;
+
+}
+.card2{
+    background-color:hsl(184, 100%, 22%);
+}
+
+.card3{
+    background-color:hsl(179, 100%, 13%);
+}
+
+.card1 button{
+    font-size: 18px;
+    color:hsl(31, 77%, 52%);
+    padding:15px 50px 15px 50px;
+    margin-bottom: 50px;
+    margin-left: 9%;
+    border-radius: 40px;
+    border:2px solid white;
+}
+
+.card1 button:hover{
+    background-color:hsl(31, 77%, 52%);
+    transition: 0.5s;
+    color:white;
+    border: 2px solid white;
+}
+.card2 button{
+    font-size: 18px;
+    color:hsl(184, 100%, 22%);
+    padding:15px 50px 15px 50px;
+    margin-bottom: 50px;
+    margin-left: 9%;
+    border-radius: 40px;
+    border:2px solid white;
+}
+.card2 button:hover{
+    background-color:hsl(184, 100%, 22%);
+    transition: 0.5s;
+    color:white;
+    border: 2px solid white;
+}
+
+.card3 button{
+    font-size: 18px;
+    color:hsl(179, 100%, 13%);
+    padding:15px 50px 15px 50px;
+    margin-bottom: 50px;
+    margin-left: 9%;
+    border-radius: 40px;
+    border:2px solid white;
+}
+.card3 button:hover{
+    background-color:hsl(179, 100%, 13%);
+    transition: 0.5s;
+    color:white;
+    border: 2px solid white;
+}
+@media screen and (min-width: 700px){
+.preview {
+    max-width: 60rem;
+    display: flex;
+}
+}
+@media screen and (max-width: 699px){
+p{
+    margin-left:25px;
+}
+button{
+    margin-left: px;
+}
+}
