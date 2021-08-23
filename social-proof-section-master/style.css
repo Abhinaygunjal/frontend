@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+#bg-top-desk {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#bg-bottom-desk {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#bg-top-mobile, #bg-bottom-mobile {
+    display: none;
+}
+
+main {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.top {
+    display: flex;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+.head .top .right {
+    flex-basis: 50%;
+}
+
+.top .head h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+    line-height: 60px;
+
+}
+
+p {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.top .head p {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+    margin-top: 32px;
+    width: 450px;
+    color: hsl(303, 10%, 53%);
+}
+
+.right {
+    margin-top: 22px;
+}
+
+.review {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 11px;
+    padding: 7px 11px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.review p {
+    font-family: 'Spartan',sans-serif;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+#rev1 {
+    margin-right: 160px;
+}
+
+#rev2 {
+    margin-right: 80px;
+    margin-left: 30px;
+    
+}
+
+#rev3 {
+    
+    margin-left: 60px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap:20px;
+}
+
+.user {
+    background-color: hsl(300, 43%, 22%);
+    max-width: 380px;
+    border-radius: 1rem;
+    padding: 20px, 15px;
+    max-height: 300px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.name {
+    flex-direction: column;
+    display: flex;
+    margin-left: 32px;
+}
+
+h3 {
+    color: white;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+h4 {
+    color: hsl(333, 80%, 67%);
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.user p {
+    color: whitesmoke;
+    margin-top: 21px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0px 30px 20px 30px
+}
+
+.testimonials #test2 {
+    margin-top: 32px;
+    margin-bottom: -20px;
+}
+
+.testimonials #test3 {
+    margin-top: 64px;
+    margin-bottom: -40px;
+}
+
+
+
+
+@media only screen and (max-width: 1030px) {
+	main {
+		max-width: 100%;
+		padding: 5rem 0;
+	}
+	.container {
+		max-width: 88%;
+	}
+	.top{
+		flex-direction: column;
+	}
+
+	.top .head h1 {
+		color: hsl(300, 88%, 13%);
+		font-size: 48px;
+		line-height: 50px;
+		text-align: center;
+	}
+	.top .head p {
+		margin-top: 2.5rem;
+		font-size: 1.4rem;
+		color: var(--grayish-magenta);
+		line-height: 2rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* ========= Stars section ========= */
+	.review {
+		display: block;
+		align-items: center;
+		justify-content: center;
+		margin: 0.8rem;
+		padding: 12px 14px;
+		
+	}
+	.review img {
+		margin: 8px 0 1px 0;
+	}
+	.review p {
+		margin-left: 0;
+		text-align: center;
+	}
+	.stars {
+		text-align: center;
+	}
+	.right #rev3 {
+        margin-left: 0;
+        margin-right: 0;
+	}
+	.right #rev2 {
+		margin-right: 0;
+        margin-left: 0;
+	}
+	.right #rev1 {
+margin-left: 0;
+        margin-right: 0;
+	}
+
+	/* ========== Testimonials section ========== */
+	.testimonials {
+		flex-direction: column;
+		margin-top: 2.5rem;
+	}
+	.user {
+		max-width: 100%;
+		min-height: 210px;
+	}
+	.testimonials #test2 {
+		margin-top: 1.5rem;
+	}
+	.testimonials #test3 {
+		margin-top: 1.5rem;
+	}
+	.user p {
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+	/* ==== BACKGROUND === */
+	#bg-top-desk,
+	#bg-bottom-desk {
+		display: none;
+	}
+    #bg-top-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #bg-bottom-mobile {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+}
